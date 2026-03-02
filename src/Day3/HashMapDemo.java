@@ -25,12 +25,7 @@ public class HashMapDemo {
         map.put( "banana", 43);
         System.out.println("After CHANGE");
 
-        for(Map.Entry<String,Integer> mp: map.entrySet())
-        {
-            int value = mp.getValue();
-            String key = mp.getKey();
 
-            System.out.println("Key: " + key + ", Value: " + value);
-        }
+        map.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
     }
 }
