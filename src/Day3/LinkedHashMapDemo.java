@@ -6,8 +6,8 @@ import java.util.Map;
 public class LinkedHashMapDemo {
     public static void main(String[] args) {
         Map<Integer,String> mp= new LinkedHashMap<>();
-        mp.put(1, "One");
-        mp.put(2, "Two");
+        mp.put(2, "One");
+        mp.put(1, "Two");
         mp.put(3, "Three");
 
         mp.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
